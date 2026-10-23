@@ -1,0 +1,22 @@
+{
+  "run": "local_short_reproducible",
+  "seed": 2,
+  "static": {
+    "episodes": 30,
+    "runs": 2,
+    "last5_mean_steps": {
+      "Dyna-Q, n=0": 49.1,
+      "Dyna-Q, n=5": 15.6,
+      "Dyna-Q, n=50": 16.1,
+      "n-step SARSA, n=4": 19.4,
+      "n-step SARSA, n=8": 21.1
+    }
+  },
+  "dynamic": {
+    "scenario": "blocking",
+    "planning_steps": 5,
+    "runs": 2,
+    "total_steps": 3000,
+    "final_reward": {"Dyna-Q": 54.5, "Dyna-Q+": 1.0}
+  }
+}
